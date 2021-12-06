@@ -8,7 +8,7 @@ class GroupOfLanternFishTest {
 
   @Test
   void testAmountAfterDays() {
-    GroupOfLanternFish groupOfLanternFish = GroupOfLanternFish.fromString("3,4,3,1,2");
+    GroupOfLanternFish groupOfLanternFish = GroupOfLanternFish.createFromString("3,4,3,1,2");
 
     assertEquals(26,  groupOfLanternFish.getAmountAfterDays(18));
     assertEquals(5934,  groupOfLanternFish.getAmountAfterDays(80));

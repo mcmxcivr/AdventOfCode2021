@@ -23,7 +23,7 @@ class GroupOfLanternFish {
     return fishPerNumber.stream().reduce(0L, Long::sum);
   }
 
-  static GroupOfLanternFish fromString(String input) {
+  static GroupOfLanternFish createFromString(String input) {
     List<Long> fishPerNumber = new ArrayList<>();
     String[] split = input.split(",");
 

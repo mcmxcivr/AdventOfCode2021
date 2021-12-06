@@ -1,16 +1,11 @@
 package nl.mcmxcivr.aoc.day3;
 
-import java.util.Arrays;
-
 public class Application {
   
   public static void main(String[] args) {
-    Day3PartOne day3PartOne = new Day3PartOne();
-    System.out.println(day3PartOne.getAnswer(DAY3_INPUT));
-
-    Day3PartTwo day3PartTwo = new Day3PartTwo();
-    day3PartTwo.calculateAnswers(Arrays.asList(DAY3_INPUT.split("\n")));
-    System.out.println(day3PartTwo.getAnswer());
+    DiagnosticReport diagnosticReport = DiagnosticReport.createFromString(DAY3_INPUT);
+    System.out.println(diagnosticReport.calculateCPowerConsumption());
+    System.out.println(diagnosticReport.calculateLifeSupportRating());
   }
 
   private static final String DAY3_INPUT = 

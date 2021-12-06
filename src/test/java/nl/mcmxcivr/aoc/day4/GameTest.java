@@ -29,10 +29,8 @@ class GameTest {
       " 2  0 12  3  7";
 
     Game game = Game.createFromString(cards);
-    int firstWinningScore = game.getWinningScoreFromString(drawn);
-    int lastWinningScore = game.getLastWinningScoreFromString(drawn);
 
-    assertEquals(4512, firstWinningScore);
-    assertEquals(1924, lastWinningScore);
+    assertEquals(4512, game.getWinningScoreFromString(drawn));
+    assertEquals(1924, game.getLastWinningScoreFromString(drawn));
   }
 }

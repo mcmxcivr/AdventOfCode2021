@@ -3,7 +3,7 @@ package nl.mcmxcivr.aoc.day6;
 class Application {
 
   public static void main(String[] args) {
-    GroupOfLanternFish groupOfLanternFish = GroupOfLanternFish.fromString(DAY6_INPUT);
+    GroupOfLanternFish groupOfLanternFish = GroupOfLanternFish.createFromString(DAY6_INPUT);
     System.out.println(groupOfLanternFish.getAmountAfterDays(80));
     System.out.println(groupOfLanternFish.getAmountAfterDays(256));
   }

@@ -17,7 +17,7 @@ public class Polymer {
     this.input = input;
   }
 
-  public long doit(int steps) {
+  public long step(int steps) {
     Map<String, Long> polymer = this.polymer;
 
     for (int i = 1; i <= steps; i++) {
@@ -49,8 +49,7 @@ public class Polymer {
 
     Map<Character, Long> characterToCount = new HashMap<>();
     characterToCount.put(input.charAt(input.length() - 1), 1L);
-    for (
-      var entry : polymer.entrySet()) {
+    for (var entry : polymer.entrySet()) {
       char character = entry.getKey().charAt(0);
       if (characterToCount.containsKey(character)) {
         characterToCount.put(character, characterToCount.get(character) + entry.getValue());

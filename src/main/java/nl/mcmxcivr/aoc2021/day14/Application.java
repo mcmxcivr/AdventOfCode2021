@@ -4,8 +4,8 @@ public class Application {
 
   public static void main(String[] args) {
     Polymer polymer = Polymer.createFromString(PAIR_INSERTION, POLYMER_TEMPLATE);
-    System.out.println(polymer.doit(10));
-    System.out.println(polymer.doit(40));
+    System.out.println(polymer.step(10));
+    System.out.println(polymer.step(40));
   }
 
   private static final String POLYMER_TEMPLATE = "VFHKKOKKCPBONFHNPHPN";

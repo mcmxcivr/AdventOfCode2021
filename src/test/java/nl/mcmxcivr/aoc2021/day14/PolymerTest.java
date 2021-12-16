@@ -25,7 +25,7 @@ class PolymerTest {
       "CC -> N\n" +
       "CN -> C";
     Polymer polymer = Polymer.createFromString(ins, "NNCB");
-    assertEquals(1588, polymer.doit(10));
-    assertEquals(2188189693529L, polymer.doit(40));
+    assertEquals(1588, polymer.step(10));
+    assertEquals(2188189693529L, polymer.step(40));
   }
 }
